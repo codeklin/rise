@@ -25,7 +25,7 @@
 body {
     font-family: 'inter', 'Montserrat';
     line-height: 1.7;
-    /* overflow: hidden;
+    overflow: hidden;
     /*  color: var(--color-blue);
     background: var(--color-white);*/
 }
@@ -323,5 +323,161 @@ section {
         color: var(--color-gold);
         border-color: var(--color-gold);
     }
+
+
+    section {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        text-align: center;
+        padding: 3rem 0;
+
+    }
+
+
+    /*======================MEDIA QUERIES (PHONES)=================*/
+    @media screen and (max-width:600px) {
+        .container {
+            width: var(--contain-width-sm);
+        }
+
+
+    }
+
+
+    header {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        background: url('../img/hero-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    header h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .header-note {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 900px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--color-white);
+
+    }
+
+
+
+    .search-bar {
+
+        width: 420px;
+
+    }
+
+    .search-bar p {
+        font-weight: 400;
+
+    }
+
+    .search-bar form button {
+        background: var(--color-gold);
+        color: var(--color-white);
+        padding: 32.5px 35px;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 6px 6px 0;
+    }
+
+
+    .services {
+        color: var(--color-blue);
+        line-height: 1.2;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        padding: 3rem 1rem;
+
+    }
+
+    .services p {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+    .icons-img {
+        width: 40px;
+    }
+
+
+    .about {
+        font-size: 15px;
+        padding-top: 6px;
+    }
+
+    @media screen and (max-width:393px) {
+
+
+        /*HEADER STYLING*/
+
+        header h1 {
+            font-size: 35px;
+            line-height: 1.2;
+        }
+
+
+        .search-bar {
+
+            top: 85%;
+            width: 365px;
+            padding: 2px 0 2px 3px;
+            height: 80px;
+
+        }
+
+
+        .search-bar p {
+            padding: 6px;
+            line-height: 1.2;
+        }
+
+        .search-bar form input {
+            padding: 10px;
+        }
+
+        .search-bar form button {
+            padding: 33px 15px;
+
+        }
+
+        .services {
+
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /*
+        .services p {
+            margin-top: 8px;
+        }
+
+        .icons-img {
+            width: 45px;
+        }*/
+
+
+    }
+
+
 
 }
