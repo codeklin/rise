@@ -460,24 +460,31 @@ section {
 
         }
 
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
         .services {
 
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 6rem;
         }
 
-        /*
+        .icons-img {
+            width: 85px;
+
+            /*
         .services p {
             margin-top: 8px;
         }
 
-        .icons-img {
-            width: 45px;
+        
         }*/
 
 
+        }
+
+
+
     }
-
-
-
-}
